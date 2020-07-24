@@ -1,6 +1,2 @@
-pdf2image
-pytesseract
-Pillow
-pathlib
-tabula-py
+PyPDF2
 simplejson

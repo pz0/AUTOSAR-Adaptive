@@ -25,7 +25,7 @@ requirements = {}
 # Stage 1
 # Processing of the table which is described in input.json file.
 for input_entry in input_list:
-    file_path = '{}'.format(input_entry['filename'])
+    file_path = '{}/{}'.format(INPUT_DIRECTORY, input_entry['filename'])
     print('Processing new file: {}'.format(file_path))
     with open(file_path, 'rb') as f:
         requirements[input_entry['filename']] = {}  # new key in requirements list

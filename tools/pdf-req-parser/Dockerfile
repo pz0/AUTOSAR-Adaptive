@@ -1,7 +1,7 @@
 FROM ubuntu:16.04
 
-RUN apt-get update && apt-get install python python-pip -y
-RUN pip install PyPDF2 simplejson
+RUN apt-get update && apt-get install python3 python3-pip -y
+RUN pip3 install PyPDF2 simplejson
 
-ENTRYPOINT ["python", "main.py"]
+ENTRYPOINT ["python3", "main.py"]
 COPY . .

@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 from helpers import *
 from PyPDF2 import PdfFileReader
 import simplejson

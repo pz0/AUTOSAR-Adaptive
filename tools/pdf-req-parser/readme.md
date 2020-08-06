@@ -4,7 +4,7 @@
 docker build -t autosar-adaptive-req-pdf-parser .
 
 # Usage
-docker run -v <requirements_directory_path>:/input autosar-adaptive-req-pdf-parser /input
+docker run -v <requirements_directory_path>:/input autosar-adaptive-req-pdf-parser -verbose -in <requirements_directory_path> -out <requirements_directory_path>/output.json
 
 <requirements_directory_path> - all PDF files with requirements and input.json file should be there
 
